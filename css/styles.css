@@ -1,0 +1,109 @@
+
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background-color: #e2e7ee;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+    }
+    header img {
+      height: 60px;
+    }
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: rgb(8, 0, 0);
+      margin: 0.5rem 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .hero {
+      text-align: center;
+      padding: 3rem 1rem;
+      background: linear-gradient(to right, #003b71, #0070b8);
+      color: white;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .hero img {
+      margin-top: 2rem;
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    .slider {
+      max-width: 100%;
+      overflow: hidden;
+      margin: 2rem auto;
+      position: relative;
+    }
+    .slides {
+      display: flex;
+      width: 100%;
+      animation: slide 12s infinite;
+    }
+    .slides img {
+      width: 50%;
+      flex: 1 0 50%;
+    }
+    @keyframes slide {
+      0% { transform: translateX(0%); }
+      33% { transform: translateX(-100%); }
+      66% { transform: translateX(-200%); }
+      100% { transform: translateX(0%); }
+    }
+    .eventos, .galeria {
+      padding: 2rem;
+      text-align: center;
+    }
+    .eventos h2, .galeria h2 {
+      color: #002856;
+      margin-bottom: 1rem;
+    }
+    .event-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+    .event-item, .galeria img {
+      background: white;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .galeria img {
+      max-width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+    footer {
+      background-color: #002856;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 2rem;
+    }
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 1.8rem;
+      }
+      nav {
+        justify-content: center;
+      }
+    }
