@@ -8,21 +8,18 @@
   <meta name="keywords" content="Universidad Simón Bolívar, pregrado, posgrado, Barranquilla, Colombia, educación superior">
   <link rel="canonical" href="https://www.unisimon.edu.co/">
 
-  <!-- Open Graph / Red Social -->
   <meta property="og:title" content="Universidad Simón Bolívar | Formación de Líderes en Colombia">
   <meta property="og:description" content="Programas de pregrado, posgrado y formación continua en Barranquilla. Conoce nuestra oferta académica y próximos eventos.">
   <meta property="og:image" content="https://www.unisimon.edu.co/sites/default/files/og-image.jpg">
   <meta property="og:url" content="https://www.unisimon.edu.co/">
   <meta property="og:type" content="website">
 
-  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@unisimon">
   <meta name="twitter:title" content="Universidad Simón Bolívar | Formación de Líderes">
   <meta name="twitter:description" content="Explora nuestros programas académicos, eventos y últimas noticias.">
   <meta name="twitter:image" content="https://www.unisimon.edu.co/sites/default/files/twitter-card.jpg">
 
-  <!-- Datos estructurados en formato JSON -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -46,57 +43,123 @@
   }
   </script>
 
-  <!-- Estilos y fuentes -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/styles.css">
 
 </head>
 
-<body>   
-  <header>
-    <div class="logo">
-      <a href="/" aria-label="Ir al inicio">
-        <img src="imagenes/logo/unisimon-logo-50-year.png" alt="Logo Universidad Simón Bolívar">
-      </a>
-    </div>
-    <nav aria-label="Menú principal">      
-        <a href="#inicio">Inicio</a>
-        <a href="#programas">Programas</a>
-        <a href="#eventos">Eventos</a>
-        <a href="#blog">Blog</a>
-        <a href="#contacto">Contacto</a>      
-    </nav>
-  </header>
+<body class="bg-light text-dark">
 
-  <section class="hero" id="inicio">
-    <h1>Bienvenidos a la Universidad Simón Bolívar</h1>
-    <p>Formando líderes con visión universal y compromiso social.</p>
-    <img src="https://www.unisimon.edu.co/sites/default/files/styles/portada_slider/public/2023-01/unisimon-sede-barranquilla.jpg" alt="Imagen institucional Unisimon">
-  </section>
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow" style="background-color:#ffffff;">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="/">
+        <img src="imagenes/logo/unisimon-logo-50-year.png" alt="Logo Unisimon" height="33" class="me-2">
+        <span>Unisimon</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#programas">Programas</a></li>
+          <li class="nav-item"><a class="nav-link" href="#eventos">Eventos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>  
+
+  <header id="inicio" class="pt-5 mt-5 text-center py-5">
+    <div class="container">
+      <h1 class="display-4 fw-bold">Bienvenidos a la Universidad Simón Bolívar</h1>
+      <p class="lead">Formando líderes innovadores con visión global y compromiso social desde 1970.</p>
+      <img src="https://www.unisimon.edu.co/sites/default/files/hero-unisimon.jpg" alt="Campus Unisimon" class="img-fluid rounded shadow mt-4" loading="lazy">
+    </div>
+  </header>
 
   <section class="slider">
     <div class="slides">    
       <img src="https://www.unisimon.edu.co/recursos/img/universidad-simon-bolivar-i64466.jpg" alt="Slider 1">
       <img src="https://www.unisimon.edu.co/showimagen/v/servicios/tele-trabajo-estudiante.jpg" alt="Slider 2">
       <img src="https://www.unisimon.edu.co/showimagen/v/universidad-simon-bolivar-63fa7.jpg" alt="Slider 3"> 
-      <img src="https://www.unisimon.edu.co/showimagen/showimage/banners/20250609143216_0.png" alt="Slider 4">    
+      <img src="https://www.unisimon.edu.co/showimagen/showimage/banners/20250609143216_0.png" alt="Slider 4">  
+      <img src="https://www.unisimon.edu.co/recursos/img/universidad-simon-bolivar-i64466.jpg" alt="Slider 5">
+      <img src="https://www.unisimon.edu.co/showimagen/v/servicios/tele-trabajo-estudiante.jpg" alt="Slider 6">  
     </div>
   </section>
 
-  <section class="eventos">
-    <h2>Próximos Eventos</h2>
-    <div class="event-list">
-      <div class="event-item">
-        <h3>Jornada de empleabilidad</h3>
-        <p>17 de diciembre, Campus virtual</p>
+  <section id="programas" class="py-5">
+    <div class="container">
+      <h2 class="mb-4 text-primary">Nuestros Programas Académicos</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h3 class="h5"><a href="/programas/ingenieria-de-sistemas" class="stretched-link text-decoration-none text-dark">Ingeniería de Sistemas</a></h3>
+              <p>Desarrolla soluciones tecnológicas de vanguardia en entornos empresariales y de investigación.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h3 class="h5"><a href="/programas/administracion-de-empresas" class="stretched-link text-decoration-none text-dark">Administración de Empresas</a></h3>
+              <p>Capacitación integral en gestión, finanzas y liderazgo para el mundo corporativo.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h3 class="h5"><a href="/programas/psicologia" class="stretched-link text-decoration-none text-dark">Psicología</a></h3>
+              <p>Estudio del comportamiento humano y las técnicas de intervención en salud mental.</p>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="event-item">
-        <h3>Feria de Posgrados</h3>
-        <p>12 de junio, Campus Cúcuta</p>
-      </div>
-      <div class="event-item">
-        <h3>Diplomado Internacional</h3>
-        <p>7 de agosto, Virtual</p>
+    </div>
+  </section>
+
+  <section id="eventos" class="bg-white py-5">
+    <div class="container">
+      <h2 class="mb-4 text-primary">Próximos Eventos</h2>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          <span><time datetime="2025-12-17">17 Dic 2025</time> – Jornada de Empleabilidad (Virtual)</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          <span><time datetime="2025-06-12">12 Jun 2025</time> – Feria de Posgrados (Cúcuta)</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          <span><time datetime="2025-08-07">07 Ago 2025</time> – Diplomado Internacional (Virtual)</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="blog" class="py-5">
+    <div class="container">
+      <h2 class="mb-4 text-primary">Últimas Noticias</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <article class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h3 class="h5"><a href="/blog/innovacion-tecnologica-2025" class="text-decoration-none text-dark">Innovación Tecnológica 2025 en Unisimon</a></h3>
+              <p><time datetime="2025-05-01">1 May 2025</time> – Conoce los proyectos de investigación que están transformando la industria.</p>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-6">
+          <article class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h3 class="h5"><a href="/blog/becas-internacionales" class="text-decoration-none text-dark">Becas Internacionales 2025</a></h3>
+              <p><time datetime="2025-04-15">15 Abr 2025</time> – Oportunidades de estudio en el extranjero para estudiantes destacados.</p>
+            </div>
+          </article>
+        </div>
       </div>
     </div>
   </section>
@@ -111,10 +174,25 @@
   </section>
 
   <footer>
-    <p>Universidad Simón Bolívar - Sede Principal</p>
-    <p>Dirección: Calle nueva #10 20 30, Barranquilla, Colombia</p>
-    <p>Teléfono: (61) 999 88 99 | Correo: info@unisimon.edu.co</p>
-    <p>&copy; 2025 Universidad Simón Bolívar. Todos los derechos reservados.</p>
+    <div class="container">
+      <h2>Contacto</h2>
+      <address>
+        <p>Universidad Simón Bolívar – Sede Principal</p>
+        <p>Calle Nueva #10-20, Barranquilla, Colombia</p>
+        <p>Tel: <a href="tel:+57619998899" class="text-white text-decoration-none">(+57) 61 999 88 99</a></p>
+        <p>Email: <a href="mailto:info@unisimon.edu.co" class="text-white text-decoration-none">info@unisimon.edu.co</a></p>
+      </address>
+      <ul class="list-inline mt-3">
+        <li class="list-inline-item"><a href="/mapa-del-sitio" class="text-white text-decoration-none">Mapa del sitio</a></li>
+        <li class="list-inline-item"><a href="/politica-de-privacidad" class="text-white text-decoration-none">Política de privacidad</a></li>
+        <li class="list-inline-item"><a href="/terminos-y-condiciones" class="text-white text-decoration-none">Términos y condiciones</a></li>
+      </ul>
+      <p class="mt-3 mb-0">&copy; 2025 Universidad Simón Bolívar. Todos los derechos reservados.</p>
+    </div>
   </footer>
+
+ <!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
 </body>
 </html>
